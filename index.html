@@ -9,6 +9,24 @@
     *{
       box-sizing: border-box;
     }
+    .btn{
+border: none;
+background-color: transparent;
+padding: 1rem 1.5rem;
+color:azure;
+border-radius: 10px;
+margin-right: 1rem;
+transition: background-color .3s;
+    }
+    .btn:hover{
+background-color: #044275;
+    }
+    .btn-primary{
+      background-color: #0981e3;
+    }
+    .btn-secondary{
+      background-color: gray;
+    }
     .contenedor{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       width: min(75%, 1000px);
@@ -50,7 +68,9 @@
           <textarea name="" id="" cols="30" rows="20"></textarea>
         </div>
       </form>
-    </div>
+      <button class="btn btn-primary">Enviar</button>
+      <button class="btn btn-secondary">Limpiar</button>
+    </div>  
     <div class="box">
       <p>an item</p>
       <p>a second item </p>
