@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .contenedor{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: min(75%, 1000px);
+      color: gray;
+      margin: 5rem auto;
+      display: grid;
+      grid-template-columns: 25rem 56.25rem;
+      column-gap: 1.5rem;
+    }
+    
+    .box, p, input, textarea{
+      border: 1px solid lightgray;
+      padding: 1rem;
+    }
+    
+    .field{
+      display: flex;
+      flex-flow: wrap column;
+    }
+    
+    textarea{
+      resize: none;
+    }
+  
+  </style>
 </head>
+
 <body>
-  <h1>Bienvenidos</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed accusantium id ea expedita omnis cupiditate recusandae. Aperiam sequi perspiciatis velit ullam exercitationem, molestias molestiae ea eaque quia et quam.</p>
-  <img src="https://picsum.photos/id/1025/250" alt="imagen_perro">
+  <div class="contenedor">
+
+    <div class="formulario">
+      <form action="#">
+        <div class="field">
+          <label for="" class="field__label">Email Address</label>
+          <input type="email" class="field__input" placeholder="name@example.com">
+        </div>
+        <div class="field">
+          <label for="" class="field__label">Example textarea</label>
+          <textarea name="" id="" cols="30" rows="20"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="box">
+      <p>an item</p>
+      <p>a second item </p>
+      <p>a third item</p>
+      <p>a fourth item</p>
+      <p>and a fifth item</p>
+    </div>
+
+  </div>
+
 
 </body>
+
 </html>
